@@ -1,0 +1,25 @@
+﻿<Window x:Class="sportProductsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sportProductsApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="Спортивные товары" 
+                       Style="{StaticResource TextBlock}"></TextBlock>
+            <Image Source="/Resources/logo.png" 
+                   HorizontalAlignment="Left"
+                   Width="130" Margin="50,0,0,0"></Image>
+        </Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"
+               Grid.Row="1"></Frame>
+    </Grid>
+</Window>
