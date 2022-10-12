@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Авторизация">
 
-    <Grid Width="300">
+    <Grid Width="300" HorizontalAlignment="Center">
         <Label Content="Логин:" Style="{StaticResource Label}"></Label>
         <Label Content="Пароль:" Style="{StaticResource Label}"
                Margin="0,90,0,0"></Label>

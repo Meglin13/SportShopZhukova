@@ -12,7 +12,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <TextBlock x:Name="FIOTextBlock" HorizontalAlignment="Right" FontSize="15"
@@ -38,7 +38,8 @@
                       Margin="450,0,0,0" DisplayMemberPath="Name"></ComboBox>
         </Grid>
         <Grid Grid.Row="1">
-            <ListView x:Name="ListView" Margin="10" HorizontalContentAlignment="Center"
+            <ListView x:Name="ListView" Margin="10" 
+                      HorizontalContentAlignment="Center"
                       VerticalContentAlignment="Center">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -53,8 +54,9 @@
                                 <RowDefinition Height="200"></RowDefinition>
                             </Grid.RowDefinitions>
 
-                            <Image x:Name="ProductImage" Margin="0,0,0,40"
-                                   Grid.Row="0" Grid.Column="0"
+                            <Image x:Name="ProductImage"
+                                   Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
                                    Height="100" Source="/Resources/picture.png"></Image>
                             <TextBlock Style="{StaticResource TextBlock}"
                                    Text="{Binding ProductName, 
@@ -63,7 +65,7 @@
                                    HorizontalAlignment="Left"
                                    Margin="20,30,0,0"
                                    Grid.Column="1" Grid.Row="0"
-                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                                   FontSize="15" TextWrapping="Wrap"></TextBlock>
                             <TextBlock Style="{StaticResource TextBlock}"
                                    Text="{Binding ProductDescription,
                                    StringFormat={}Описание товара: {0}}"
@@ -71,31 +73,30 @@
                                    HorizontalAlignment="Left"
                                    Margin="20,80,0,0"
                                    Grid.Column="1" Grid.Row="0"
-                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                                   FontSize="15" TextWrapping="Wrap"></TextBlock>
                             <TextBlock Style="{StaticResource TextBlock}"
                                    Text="{Binding Manufacturers.Name,
                                    StringFormat={}Производитель: {0}}"
                                    VerticalAlignment="Top"
                                    HorizontalAlignment="Left"
-                                   Margin="20,150,0,0"
+                                   Margin="20,130,0,0"
                                    Grid.Column="1" Grid.Row="0"
-                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                                   FontSize="15" TextWrapping="Wrap"></TextBlock>
                             <TextBlock Style="{StaticResource TextBlock}"
                                    Text="{Binding ProductCost,
                                    StringFormat={}Цена:{0:f2}}"
                                    VerticalAlignment="Top"
                                    HorizontalAlignment="Left"
-                                   Margin="20,200,0,0"
+                                   Margin="20,170,0,0"
                                    Grid.Column="1" Grid.Row="0"
-                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                                   FontSize="15" TextWrapping="Wrap"></TextBlock>
                             <TextBlock Style="{StaticResource TextBlock}"
                                    Text="{Binding ProductQuantityInStock,
                                    StringFormat={}Наличие на складе: {0}}"
                                    VerticalAlignment="Center"
                                    HorizontalAlignment="Center"
-                                   Margin="0,0,0,50"
                                    Grid.Column="2" Grid.Row="0"
-                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                                   FontSize="15" TextWrapping="Wrap"></TextBlock>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>

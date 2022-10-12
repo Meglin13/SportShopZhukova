@@ -92,3 +92,4 @@ G:\жукова\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuth
 G:\жукова\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_Content.g.cs
 G:\жукова\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuthUserPage.baml
 G:\жукова\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.CopyComplete
+G:\жукова\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.AssemblyReference.cache
