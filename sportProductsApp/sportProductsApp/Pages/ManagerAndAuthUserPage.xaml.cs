@@ -24,11 +24,14 @@ namespace sportProductsApp.Pages
         {
             InitializeComponent();
 
-            FIOTextBlock.Text = Manager.currentUser.UserSurname + 
-                                Manager.currentUser.UserName + 
-                                Manager.currentUser.UserPatronymic;
+            FIOTextBlock.Text = Manager.currentUser.UserSurname + " " +
+                                Manager.currentUser.UserName + " " +
+                                Manager.currentUser.UserPatronymic + " ";
 
-            CounterOfRecordsLabel.Content = string.Empty;
+            //CounterOfRecordsLabel.Content = string.Empty;
+
+            var currentProduct = Data.sportShopZhukovaEntities.GetContext().Product.ToList();
+            ListView.ItemsSource = currentProduct;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -37,6 +40,16 @@ namespace sportProductsApp.Pages
             {
                 Manager.MainFrame.GoBack();
             }
+        }
+
+        private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ManufacturerComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

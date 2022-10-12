@@ -88,7 +88,6 @@ G:\жукова\sportProductsApp\sportProductsApp\bin\Debug\pt-BR\Microsoft.Data
 G:\жукова\sportProductsApp\sportProductsApp\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
 G:\жукова\sportProductsApp\sportProductsApp\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 G:\жукова\sportProductsApp\sportProductsApp\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-G:\жукова\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.AssemblyReference.cache
 G:\жукова\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuthUserPage.g.cs
 G:\жукова\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_Content.g.cs
 G:\жукова\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuthUserPage.baml

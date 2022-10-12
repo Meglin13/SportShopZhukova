@@ -10,19 +10,95 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <TextBlock x:Name="FIOTextBlock" HorizontalAlignment="Right"
+            <TextBlock x:Name="FIOTextBlock" HorizontalAlignment="Right" FontSize="15"
                        Style="{StaticResource TextBlock}" Margin="0,0,30,0"></TextBlock>
             <Label x:Name="CounterOfRecordsLabel" Margin="30,0,0,0"
-                   HorizontalAlignment="Left"></Label>
+                   HorizontalAlignment="Left" Content="0/0"
+                   Style="{StaticResource Label}"
+                   VerticalAlignment="Center"></Label>
+            <TextBox x:Name="SearchTextBox" Style="{StaticResource TextBox}"
+                     Width="130" HorizontalContentAlignment="Left"
+                     HorizontalAlignment="Left" Margin="100,0,0,0"
+                     TextChanged="SearchTextBox_TextChanged"></TextBox>
+            <RadioButton Content="Цена ↑" FontFamily="Comic Sans MS"
+                         FontSize="20" VerticalAlignment="Center"
+                         Margin="250,0,0,0"></RadioButton>
+            <RadioButton Content="Цена ↓" FontFamily="Comic Sans MS"
+                         FontSize="20" VerticalAlignment="Center"
+                         Margin="350,0,0,0"></RadioButton>
+            <ComboBox x:Name="ManufacturerComboBox"
+                      Style="{StaticResource ComboBox}"
+                      HorizontalAlignment="Left"
+                      SelectionChanged="ManufacturerComboBox_SelectionChanged"
+                      Margin="450,0,0,0" DisplayMemberPath="Name"></ComboBox>
         </Grid>
         <Grid Grid.Row="1">
-            <ListView>
-                
+            <ListView x:Name="ListView" Margin="10" HorizontalContentAlignment="Center"
+                      VerticalContentAlignment="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="180"></ColumnDefinition>
+                                <ColumnDefinition Width="600"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="200"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="ProductImage" Margin="0,0,0,40"
+                                   Grid.Row="0" Grid.Column="0"
+                                   Height="100" Source="/Resources/picture.png"></Image>
+                            <TextBlock Style="{StaticResource TextBlock}"
+                                   Text="{Binding ProductName, 
+                                   StringFormat={}Наименование товара: {0}}"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Margin="20,30,0,0"
+                                   Grid.Column="1" Grid.Row="0"
+                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                            <TextBlock Style="{StaticResource TextBlock}"
+                                   Text="{Binding ProductDescription,
+                                   StringFormat={}Описание товара: {0}}"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Margin="20,80,0,0"
+                                   Grid.Column="1" Grid.Row="0"
+                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                            <TextBlock Style="{StaticResource TextBlock}"
+                                   Text="{Binding Manufacturers.Name,
+                                   StringFormat={}Производитель: {0}}"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Margin="20,150,0,0"
+                                   Grid.Column="1" Grid.Row="0"
+                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                            <TextBlock Style="{StaticResource TextBlock}"
+                                   Text="{Binding ProductCost,
+                                   StringFormat={}Цена:{0:f2}}"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Margin="20,200,0,0"
+                                   Grid.Column="1" Grid.Row="0"
+                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                            <TextBlock Style="{StaticResource TextBlock}"
+                                   Text="{Binding ProductQuantityInStock,
+                                   StringFormat={}Наличие на складе: {0}}"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,50"
+                                   Grid.Column="2" Grid.Row="0"
+                                   FontSize="18" TextWrapping="Wrap"></TextBlock>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </Grid>
         <Grid Grid.Row="2">

@@ -286,10 +286,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\testList.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Manager.cs" />
@@ -298,9 +294,6 @@
     </Compile>
     <Compile Include="Pages\ManagerAndAuthUserPage.xaml.cs">
       <DependentUpon>ManagerAndAuthUserPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\testList.xaml.cs">
-      <DependentUpon>testList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -353,6 +346,7 @@
       <DependentUpon>sportProducts.edmx</DependentUpon>
       <LastGenOutput>sportProducts.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\picture.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
