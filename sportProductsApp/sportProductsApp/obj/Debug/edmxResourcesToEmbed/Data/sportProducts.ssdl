@@ -68,7 +68,7 @@
     <Property Name="Id_unit" Type="int" Nullable="false" />
     <Property Name="Id_manufacturer" Type="int" Nullable="false" />
     <Property Name="Id_supplier" Type="int" Nullable="false" />
-    <Property Name="Id_catgory" Type="int" Nullable="false" />
+    <Property Name="Id_category" Type="int" Nullable="false" />
     <Property Name="ProductArticleNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="ProductName" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ProductCost" Type="decimal" Precision="19" Scale="4" Nullable="false" />
@@ -77,6 +77,7 @@
     <Property Name="ProductQuantityInStock" Type="int" Nullable="false" />
     <Property Name="ProductDescription" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ProductPhoto" Type="image" />
+    <Property Name="ProductPhotoPath" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Role">
     <Key>
@@ -239,7 +240,7 @@
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Product">
-        <PropertyRef Name="Id_catgory" />
+        <PropertyRef Name="Id_category" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

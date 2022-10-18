@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,8 @@ namespace sportProductsApp.Pages
     public partial class ManagerAndAuthUserPage : Page
     {
         public static string GlobalCount { get; set; }
+        public static bool PriceOrderByDesc { get; set; } = false;
+        public static bool PriceOrderBy { get; set; } = false;
         public ManagerAndAuthUserPage()
         {
             InitializeComponent();
@@ -31,9 +34,12 @@ namespace sportProductsApp.Pages
                                 Manager.currentUser.UserName + " " +
                                 Manager.currentUser.UserPatronymic + " ";
             }
-            
 
-            ManufacturerComboBox.ItemsSource = Data.sportShopZhukovaEntities.GetContext().Manufacturers.ToList();
+            var manufacturers = Data.sportShopZhukovaEntities.GetContext().Manufacturers.ToList();
+            manufacturers.Insert(0, new Data.Manufacturers { Name = "Все производители" });
+
+            ManufacturerComboBox.ItemsSource = manufacturers;
+            ManufacturerComboBox.SelectedIndex = 0;
 
             var currentProduct = Data.sportShopZhukovaEntities.GetContext().Product.ToList();
             ListView.ItemsSource = currentProduct;
@@ -60,7 +66,9 @@ namespace sportProductsApp.Pages
         {
             var search = Data.sportShopZhukovaEntities.GetContext().Product.ToList();
 
-            var search2 = search.Where(d => d.Units.Unit.ToString().ToLower().Contains(SearchTextBox.Text.ToLower())
+            if (!string.IsNullOrEmpty(SearchTextBox.Text))
+            {
+                search = search.Where(d => d.Units.Unit.ToString().ToLower().Contains(SearchTextBox.Text.ToLower())
                 || d.Manufacturers.Name.ToString().ToLower().Contains(SearchTextBox.Text.ToLower())
                 || d.Suppliers.Name.ToString().ToLower().Contains(SearchTextBox.Text.ToLower())
                 || d.Categories.Name.ToString().ToLower().Contains(SearchTextBox.Text.ToLower())
@@ -71,23 +79,65 @@ namespace sportProductsApp.Pages
                 || d.ProductDiscountAmount.ToString().ToLower().Contains(SearchTextBox.Text.ToLower())
                 || d.ProductQuantityInStock.ToString().ToLower().Contains(SearchTextBox.Text.ToLower())
                 || d.ProductDescription.ToString().ToLower().Contains(SearchTextBox.Text.ToLower())
-                );
+                ).ToList();
+            }
 
-            if (search2.Count() == 0)
+            if (PriceOrderBy == true)
+            {
+                search = search.OrderBy(p => p.ProductCost).ToList();
+            }
+            
+            if (PriceOrderByDesc == true)
+            {
+                search = search.OrderByDescending(p => p.ProductCost).ToList();
+            }
+
+            var selectManufacturer = ManufacturerComboBox.SelectedItem as Data.Manufacturers;
+
+            if (selectManufacturer.Name != "Все производители")
+            {
+                search = search.Where(d => d.Manufacturers.Name == selectManufacturer.Name).ToList();
+            }
+
+            if (search.Count() == 0)
             {
                 MessageBox.Show("Смягчите фильтры! Нет доступных результатов!", "Внимание!", MessageBoxButton.OK, MessageBoxImage.Warning);
-                ListView.ItemsSource = Data.sportShopZhukovaEntities.GetContext().Product.ToList();
+                ListView.ItemsSource = null;
             }
             else
             {
-                ListView.ItemsSource = search2;
-                CounterOfRecordsLabel.Content = $"{search2.Count()}/{GlobalCount}";
+                ListView.ItemsSource = search;
+                CounterOfRecordsLabel.Content = $"{search.Count()}/{GlobalCount}";
             }
         }
 
         private void ManufacturerComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Update();
+        }
 
+        private void PriceOrderByDescRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            PriceOrderByDesc = true;
+            Update();
+        }
+
+        private void PriceOrderByRadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            PriceOrderBy = true;
+            Update();
+        }
+
+        private void PriceOrderByRadioButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            PriceOrderBy = false;
+            Update();
+        }
+
+        private void PriceOrderByDescRadioButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            PriceOrderByDesc = false;
+            Update();
         }
     }
 }

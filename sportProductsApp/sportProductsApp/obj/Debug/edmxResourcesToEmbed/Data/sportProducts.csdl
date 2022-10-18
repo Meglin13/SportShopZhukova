@@ -82,7 +82,7 @@
     <Property Name="Id_unit" Type="Int32" Nullable="false" />
     <Property Name="Id_manufacturer" Type="Int32" Nullable="false" />
     <Property Name="Id_supplier" Type="Int32" Nullable="false" />
-    <Property Name="Id_catgory" Type="Int32" Nullable="false" />
+    <Property Name="Id_category" Type="Int32" Nullable="false" />
     <Property Name="ProductArticleNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ProductCost" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
@@ -91,6 +91,7 @@
     <Property Name="ProductQuantityInStock" Type="Int32" Nullable="false" />
     <Property Name="ProductDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ProductPhoto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductPhotoPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Categories" Relationship="Self.FK_Product_Categories" FromRole="Product" ToRole="Categories" />
     <NavigationProperty Name="Manufacturers" Relationship="Self.FK_Product_Manufacturers" FromRole="Product" ToRole="Manufacturers" />
     <NavigationProperty Name="OrderProduct" Relationship="Self.FK_OrderProduct_Product" FromRole="Product" ToRole="OrderProduct" />
@@ -169,7 +170,7 @@
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Product">
-        <PropertyRef Name="Id_catgory" />
+        <PropertyRef Name="Id_category" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

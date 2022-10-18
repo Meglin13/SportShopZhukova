@@ -45,6 +45,9 @@ namespace sportProductsApp.Pages
                     {
                         Manager.MainFrame.Navigate(new Pages.ManagerAndAuthUserPage());
                     }
+                } else
+                {
+                    MessageBox.Show("Пользователей с такими данными не существует!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             } else
             {

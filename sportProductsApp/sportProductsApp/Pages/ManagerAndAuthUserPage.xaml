@@ -25,12 +25,20 @@
                      Width="130" HorizontalContentAlignment="Left"
                      HorizontalAlignment="Left" Margin="100,0,0,0"
                      TextChanged="SearchTextBox_TextChanged"></TextBox>
-            <RadioButton Content="Цена ↑" FontFamily="Comic Sans MS"
+            <RadioButton x:Name="PriceOrderByRadioButton" Content="Цена ↑" FontFamily="Comic Sans MS"
                          FontSize="20" VerticalAlignment="Center"
-                         Margin="250,0,0,0"></RadioButton>
-            <RadioButton Content="Цена ↓" FontFamily="Comic Sans MS"
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Left"
+                         Margin="250,0,0,0"
+                         Checked="PriceOrderByRadioButton_Checked"
+                         Unchecked="PriceOrderByRadioButton_Unchecked"></RadioButton>
+            <RadioButton x:Name="PriceOrderByDescRadioButton" Content="Цена ↓" FontFamily="Comic Sans MS"
                          FontSize="20" VerticalAlignment="Center"
-                         Margin="350,0,0,0"></RadioButton>
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Left"
+                         Margin="350,0,0,0"
+                         Checked="PriceOrderByDescRadioButton_Checked"
+                         Unchecked="PriceOrderByDescRadioButton_Unchecked"></RadioButton>
             <ComboBox x:Name="ManufacturerComboBox"
                       Style="{StaticResource ComboBox}"
                       HorizontalAlignment="Left"
@@ -57,7 +65,15 @@
                             <Image x:Name="ProductImage"
                                    Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"
                                    HorizontalAlignment="Center"
-                                   Height="100" Source="/Resources/picture.png"></Image>
+                                   Height="100">
+                                <Image.Source>
+                                    <Binding Path="ProductPhoto">
+                                        <Binding.TargetNullValue>
+                                            <BitmapImage UriSource="/Resources/picture.png"/>
+                                        </Binding.TargetNullValue>
+                                    </Binding>
+                                </Image.Source>
+                            </Image>
                             <TextBlock Style="{StaticResource TextBlock}"
                                    Text="{Binding ProductName, 
                                    StringFormat={}Наименование товара: {0}}"

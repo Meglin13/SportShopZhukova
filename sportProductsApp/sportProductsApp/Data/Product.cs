@@ -24,7 +24,7 @@ namespace sportProductsApp.Data
         public int Id_unit { get; set; }
         public int Id_manufacturer { get; set; }
         public int Id_supplier { get; set; }
-        public int Id_catgory { get; set; }
+        public int Id_category { get; set; }
         public string ProductArticleNumber { get; set; }
         public string ProductName { get; set; }
         public decimal ProductCost { get; set; }
@@ -33,6 +33,7 @@ namespace sportProductsApp.Data
         public int ProductQuantityInStock { get; set; }
         public string ProductDescription { get; set; }
         public byte[] ProductPhoto { get; set; }
+        public string ProductPhotoPath { get; set; }
     
         public virtual Categories Categories { get; set; }
         public virtual Manufacturers Manufacturers { get; set; }
