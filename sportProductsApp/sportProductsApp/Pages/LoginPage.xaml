@@ -49,6 +49,27 @@
                     </Style>
                 </Button.Resources>
             </Button>
+
+            <Button Content="Button">
+                <Button.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border CornerRadius="10"
+                            Background="DarkGray"
+                            BorderThickness="1">
+                                        <ContentPresenter
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Margin="{TemplateBinding Padding}" ></ContentPresenter>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
     </Grid>
 </Page>
