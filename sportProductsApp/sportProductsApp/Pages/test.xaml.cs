@@ -13,20 +13,19 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace sportProductsApp
+namespace sportProductsApp.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для test.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class test : Page
     {
-        public MainWindow()
+        public test()
         {
             InitializeComponent();
 
-            Manager.MainFrame = MainFrame;
-            //Manager.MainFrame.Navigate(new Pages.test());
-            Manager.MainFrame.Navigate(new Pages.LoginPage());
+            var currentProduct = Data.sportShopZhukovaEntities.GetContext().Product.ToList();
+            ListView.ItemsSource = currentProduct;
         }
     }
 }

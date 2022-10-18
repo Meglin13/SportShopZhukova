@@ -75,7 +75,7 @@
           <ScalarProperty Name="Id_unit" ColumnName="Id_unit" />
           <ScalarProperty Name="Id_manufacturer" ColumnName="Id_manufacturer" />
           <ScalarProperty Name="Id_supplier" ColumnName="Id_supplier" />
-          <ScalarProperty Name="Id_catgory" ColumnName="Id_catgory" />
+          <ScalarProperty Name="Id_category" ColumnName="Id_category" />
           <ScalarProperty Name="ProductArticleNumber" ColumnName="ProductArticleNumber" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
           <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
@@ -84,6 +84,7 @@
           <ScalarProperty Name="ProductQuantityInStock" ColumnName="ProductQuantityInStock" />
           <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
           <ScalarProperty Name="ProductPhoto" ColumnName="ProductPhoto" />
+          <ScalarProperty Name="ProductPhotoPath" ColumnName="ProductPhotoPath" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

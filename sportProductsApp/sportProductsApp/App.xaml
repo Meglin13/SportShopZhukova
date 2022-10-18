@@ -38,14 +38,14 @@
             <Setter Property="FontFamily" Value="Comic Sans MS" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="HorizontalContentAlignment" Value="Center" />
-            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
         </Style>
         <Style TargetType="ComboBox" x:Key="ComboBox">
             <Setter Property="Width" Value="140" />
             <Setter Property="Height" Value="30" />
             <Setter Property="FontFamily" Value="Comic Sans MS" />
             <Setter Property="HorizontalContentAlignment" Value="Center" />
-            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
         </Style>
     </Application.Resources>
 </Application>
