@@ -13,19 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace sportProductsApp
+namespace sportProductsApp.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AddEditPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddEditPage : Page
     {
-        public MainWindow()
+        Data.Product _currentProduct;
+        public AddEditPage(Data.Product product)
         {
             InitializeComponent();
 
-            Manager.MainFrame = MainFrame;
-            Manager.MainFrame.Navigate(new Pages.LoginPage());
+            _currentProduct = product != null ? product : new Data.Product();
+
+            DataContext = _currentProduct;
         }
     }
 }

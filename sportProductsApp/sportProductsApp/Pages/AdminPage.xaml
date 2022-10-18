@@ -1,0 +1,58 @@
+﻿<Page x:Class="sportProductsApp.Pages.AdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:sportProductsApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="0" Name="ProductDG" AutoGenerateColumns="False" AlternatingRowBackground="LightGray"
+                  CanUserAddRows="False" 
+                  CanUserDeleteRows="False" 
+                  CanUserReorderColumns="False" 
+                  CanUserResizeRows="False" 
+                  CanUserSortColumns="False"
+                  ColumnWidth="auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}"/>
+                <DataGridTemplateColumn Header="Изображение">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding ProductPhoto}" Height="200"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Категория" Binding="{Binding Categories.Name}"/>
+                <DataGridTextColumn Header="Поставщик" Binding="{Binding Manufacturers.Name}"/>
+                <DataGridTextColumn Header="Производитель" Binding="{Binding Suppliers.Name}"/>
+                <DataGridTextColumn Header="Артикул" Binding="{Binding ProductArticleNumber}"/>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding ProductName}"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding ProductCost}"/>
+                <DataGridTextColumn Header="Кол-во" Binding="{Binding ProductQuantityInStock}"/>
+                <DataGridTextColumn Header="Ед. изм." Binding="{Binding Units.Unit}"/>
+                <DataGridTextColumn Header="Описание" Binding="{Binding ProductDescription}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="EditBt" Click="EditBt_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Row="1">
+            <Button Content="Добавить товар" Style="{StaticResource Button}" Name="AddBT" Click="AddBT_Click" HorizontalAlignment="Left"/>
+            <Button Content="Назад" Style="{StaticResource Button}" Name="BackBT" Click="BackBT_Click" HorizontalAlignment="Right"/>
+        </Grid>
+
+    </Grid>
+</Page>

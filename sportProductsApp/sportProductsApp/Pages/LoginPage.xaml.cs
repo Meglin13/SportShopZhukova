@@ -45,6 +45,10 @@ namespace sportProductsApp.Pages
                     {
                         Manager.MainFrame.Navigate(new Pages.ManagerAndAuthUserPage());
                     }
+                    else if (Manager.currentUser.Role.RoleName == "Администратор")
+                    {
+                        Manager.MainFrame.Navigate(new Pages.AdminPage());
+                    }
                 } else
                 {
                     MessageBox.Show("Пользователей с такими данными не существует!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
