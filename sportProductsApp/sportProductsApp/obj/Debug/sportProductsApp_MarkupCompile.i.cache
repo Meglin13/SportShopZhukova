@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Новая папка\sportProductsApp\sportProductsApp\obj\Debug\
+C:\Users\kuzob\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\
 sportProductsApp
 none
 false
 DEBUG;TRACE
-C:\Новая папка\sportProductsApp\sportProductsApp\App.xaml
-4-1134961113
-21238034907
-28622467287
-1601003025277
+C:\Users\kuzob\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\App.xaml
+41751658283
+2402045069
+282097355021
+160-1193856570
 MainWindow.xaml;Pages\LoginPage.xaml;Pages\ManagerAndAuthUserPage.xaml;Pages\test.xaml;
 
-False
+True
 
