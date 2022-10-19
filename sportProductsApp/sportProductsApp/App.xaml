@@ -22,6 +22,21 @@
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
             <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <!--<Border x:Name="border"
+                            CornerRadius="0"
+                            BorderBrush="#000"
+                            BorderThickness="2"
+                            Background="#fff"
+                            ></Border>-->
+                        <Border Padding="0" CornerRadius="20" BorderThickness="1" BorderBrush="LightGray" 
+                                SnapsToDevicePixels="True" Background="White">
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
             <!--<Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="HorizontalContentAlignment" Value="Center" />
@@ -43,6 +58,21 @@
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
             <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type PasswordBox}">
+                        <!--<Border x:Name="border"
+                            CornerRadius="0"
+                            BorderBrush="#000"
+                            BorderThickness="2"
+                            Background="#fff"
+                            ></Border>-->
+                        <Border Padding="0" CornerRadius="20" BorderThickness="1" BorderBrush="LightGray" 
+                                SnapsToDevicePixels="True" Background="White">
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
         <Style TargetType="Button" x:Key="Button">
             <Setter Property="Width" Value="100" />
