@@ -22,6 +22,18 @@
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
             <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <!--<Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"></Setter>
+                    <Setter Property="BorderThickness" Value="1"></Setter>
+                    <Setter Property="BorderBrush" Value="LightGray"></Setter>
+                    <Setter Property="SnapsToDevicePixels" Value="True"></Setter>
+                    <Setter Property="Background" Value="White"></Setter>
+                </Style>
+            </Style.Resources>-->
         </Style>
         <Style TargetType="PasswordBox" x:Key="PasswordBox">
             <Setter Property="Width" Value="300" />
@@ -39,6 +51,14 @@
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="HorizontalContentAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="#FF498C51" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"></Setter>
+                </Style>
+            </Style.Resources>
         </Style>
         <Style TargetType="ComboBox" x:Key="ComboBox">
             <Setter Property="Width" Value="140" />

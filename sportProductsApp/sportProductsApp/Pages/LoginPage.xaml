@@ -17,9 +17,7 @@
                    VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
             <Border Padding="0" CornerRadius="20" BorderThickness="1" BorderBrush="LightGray" 
                     SnapsToDevicePixels="True" Background="White">
-                <TextBox x:Name="LoginTextBox" Style="{StaticResource TextBox}"
-                 Margin="0,0,0,0" Background="Transparent" BorderThickness="0"
-                 HorizontalContentAlignment="Center"></TextBox>
+                <TextBox x:Name="LoginTextBox" Style="{StaticResource TextBox}" ></TextBox>
             </Border>
             <Label Content="Пароль" Style="{StaticResource Label}"
                    Margin="0,0,0,0" VerticalAlignment="Center" 
@@ -32,23 +30,9 @@
             </Border>
             <Separator Height="10" Opacity="0"></Separator>
             <Button x:Name="EnterButton" Content="Вход" Style="{StaticResource Button}"
-                Click="EnterButton_Click" Width="300" Foreground="White" Background="#FF498C51"
-                BorderThickness="0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
+                Click="EnterButton_Click" Width="300"></Button>
             <Button x:Name="EnterGusetButton" Content="Войти как гость" Style="{StaticResource Button}"
-                Click="EnterGusetButton_Click" Width="300" Margin="0,10,0,0"
-                Foreground="White" Background="#FF498C51" BorderThickness="0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
+                Click="EnterGusetButton_Click" Width="300" Margin="0,10,0,0"></Button>
         </StackPanel>
     </Grid>
 </Page>
