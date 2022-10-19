@@ -16,7 +16,7 @@
             <Label Content="Логин" Style="{StaticResource Label}"
                    VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
             <TextBox x:Name="LoginTextBox" Style="{StaticResource TextBox}"
-                     Margin="0,0,0,0" Background="Transparent" BorderThickness="0"
+                     Margin="0,0,0,0" BorderThickness="0"
                      HorizontalContentAlignment="Center"></TextBox>
             <Label Content="Пароль" Style="{StaticResource Label}"
                    Margin="0,0,0,0" VerticalAlignment="Center" 

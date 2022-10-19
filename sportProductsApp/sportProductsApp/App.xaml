@@ -21,34 +21,7 @@
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="HorizontalContentAlignment" Value="Left" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type TextBox}">
-                        <!--<Border x:Name="border"
-                            CornerRadius="0"
-                            BorderBrush="#000"
-                            BorderThickness="2"
-                            Background="#fff"
-                            ></Border>-->
-                        <Border Padding="0" CornerRadius="20" BorderThickness="1" BorderBrush="LightGray" 
-                                SnapsToDevicePixels="True" Background="White">
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <!--<Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderThickness" Value="0" />
             <Setter Property="HorizontalContentAlignment" Value="Center" />
-            <Style.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="20"></Setter>
-                    <Setter Property="BorderThickness" Value="1"></Setter>
-                    <Setter Property="BorderBrush" Value="LightGray"></Setter>
-                    <Setter Property="SnapsToDevicePixels" Value="True"></Setter>
-                    <Setter Property="Background" Value="White"></Setter>
-                </Style>
-            </Style.Resources>-->
         </Style>
         <Style TargetType="PasswordBox" x:Key="PasswordBox">
             <Setter Property="Width" Value="300" />
@@ -57,22 +30,7 @@
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="HorizontalContentAlignment" Value="Left" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type PasswordBox}">
-                        <!--<Border x:Name="border"
-                            CornerRadius="0"
-                            BorderBrush="#000"
-                            BorderThickness="2"
-                            Background="#fff"
-                            ></Border>-->
-                        <Border Padding="0" CornerRadius="20" BorderThickness="1" BorderBrush="LightGray" 
-                                SnapsToDevicePixels="True" Background="White">
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
         </Style>
         <Style TargetType="Button" x:Key="Button">
             <Setter Property="Width" Value="100" />
