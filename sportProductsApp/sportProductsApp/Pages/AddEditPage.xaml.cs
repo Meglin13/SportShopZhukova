@@ -29,5 +29,15 @@ namespace sportProductsApp.Pages
 
             DataContext = _currentProduct;
         }
+
+        private void BackBT_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SaveBT_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

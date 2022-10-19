@@ -4,16 +4,20 @@
 winexe
 C#
 .cs
-C:\Users\kuzob\Desktop\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\
+C:\Users\zhuma\Desktop\Новая папка (2)\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\
 sportProductsApp
 none
 false
 DEBUG;TRACE
-C:\Users\kuzob\Desktop\SportShopZhukova\sportProductsApp\sportProductsApp\App.xaml
+C:\Users\zhuma\Desktop\Новая папка (2)\SportShopZhukova\sportProductsApp\sportProductsApp\App.xaml
 6639478810
 2402045069
 29186037526
+<<<<<<< HEAD
+1601183558653
+=======
 1601545358422
+>>>>>>> 16368c4d434c8d6157f7d2c318d83e0960952c85
 MainWindow.xaml;Pages\AddEditPage.xaml;Pages\AdminPage.xaml;Pages\LoginPage.xaml;Pages\ManagerAndAuthUserPage.xaml;Pages\test.xaml;
 
 False
