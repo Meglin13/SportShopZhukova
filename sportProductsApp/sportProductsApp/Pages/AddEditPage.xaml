@@ -9,9 +9,9 @@
 
     <Grid Height="300" Background="#FF76E383">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="150"/>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
@@ -24,32 +24,30 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Label Content="ID" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Наименование" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Категория" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Кол-во на складе" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Единица измерения" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="ID" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Наименование" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Категория" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Кол-во на складе" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Единица измерения" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <TextBox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <ComboBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <TextBox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <ComboBox Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+        <TextBox Style="{StaticResource TextBox}" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding Id}"/>
+        <TextBox Style="{StaticResource TextBox}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding ProductName}"/>
+        <ComboBox Style="{StaticResource ComboBox}"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" ItemsSource="{Binding Categories.Name}"/>
+        <TextBox Style="{StaticResource TextBox}"  Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding ProductQuantityInStock}"/>
+        <ComboBox Style="{StaticResource ComboBox}" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" ItemsSource="{Binding Units.Unit}"/>
 
-        <Label Content="Изображение" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Поставщик" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Стоимость" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Описание" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Изображение" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Поставщик" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Стоимость" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Описание" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <TextBox Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <TextBox Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <TextBox Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <TextBox Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="90"/>
+        <Image Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Source="{Binding ProductPhoto}"/>
+        <TextBox Style="{StaticResource TextBox}"  Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding Suppliers.Name}"/>
+        <TextBox Style="{StaticResource TextBox}"  Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding ProductCost}"/>
+        <TextBox Style="{StaticResource TextBox}"  Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="90" Text="{Binding ProductDescription}"/>
 
-
-
-        <Button Content="Назад" Name="BackBT" Click="BackBT_Click" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Content="Сохранить" Name="SaveBT" Click="SaveBT_Click" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Style="{StaticResource Button}" Content="Назад" Name="BackBT" Click="BackBT_Click" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Style="{StaticResource Button}" Content="Сохранить" Name="SaveBT" Click="SaveBT_Click" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
     </Grid>
 </Page>
