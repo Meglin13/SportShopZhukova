@@ -13,6 +13,7 @@
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -40,10 +41,10 @@
         <Label Content="Стоимость" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Content="Описание" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <TextBox Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <TextBox Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <TextBox Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
-        <TextBox Grid.Row="3" Grid.RowSpan="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="90"/>
+        <TextBox Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+        <TextBox Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+        <TextBox Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"/>
+        <TextBox Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="90"/>
 
 
 
