@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:sportProductsApp.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="650" d:DesignWidth="1000"
-      Title="ManagerAndAuthUserPage">
+      Title="ManagerAndAuthUserPage" Background="#FF76E383">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -43,14 +43,7 @@
                       Style="{StaticResource ComboBox}"
                       HorizontalAlignment="Left"
                       SelectionChanged="ManufacturerComboBox_SelectionChanged"
-                      Margin="450,0,0,0" DisplayMemberPath="Name"
-                      Background="#FF498C51" Foreground="White">
-                <ComboBox.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"></Setter>
-                    </Style>
-                </ComboBox.Resources>
-            </ComboBox>
+                      Margin="450,0,0,0" DisplayMemberPath="Name"></ComboBox>
         </Grid>
         <Grid Grid.Row="1">
             <ListView x:Name="ListView" Margin="10" 
