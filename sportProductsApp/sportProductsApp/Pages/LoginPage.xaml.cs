@@ -20,9 +20,15 @@ namespace sportProductsApp.Pages
     /// </summary>
     public partial class LoginPage : Page
     {
+        string cap;
+
         public LoginPage()
         {
             InitializeComponent();
+
+            cap = MakeCAPTCHA();
+
+            CAPTCHALabel.Content = "CAPTCHA: " + cap;
         }
 
         private void EnterButton_Click(object sender, RoutedEventArgs e)
@@ -32,7 +38,7 @@ namespace sportProductsApp.Pages
             {
                 if (Data.sportShopZhukovaEntities.GetContext().User
                     .Any(user => user.UserLogin == LoginTextBox.Text
-                    && user.UserPassword == PasswordBox.Password))
+                    && user.UserPassword == PasswordBox.Password) & CAPTCHACheckTextBox.Text == cap)
                 {
                     Manager.currentUser = Data.sportShopZhukovaEntities.GetContext().User
                         .Where(user => user.UserLogin == LoginTextBox.Text 
@@ -55,13 +61,34 @@ namespace sportProductsApp.Pages
                 }
             } else
             {
-                MessageBox.Show("Поле логин/пароль пустое!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Поле логин/пароль/капча пустое!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private void EnterGusetButton_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new Pages.ManagerAndAuthUserPage());
+        }
+
+        private string MakeCAPTCHA()
+        {
+            string result = "";
+
+            char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+|/".ToCharArray();
+
+            Random random = new Random();
+
+            for (int i = 0; i < 4; i++)
+            {
+                result += chars[random.Next(0, chars.Length - 1)];
+            }
+
+            return result;
+        }
+
+        private void NewCAPTCHAButton_Click(object sender, RoutedEventArgs e)
+        {
+            CAPTCHALabel.Content = "CAPTCHA: " + MakeCAPTCHA();
         }
     }
 }

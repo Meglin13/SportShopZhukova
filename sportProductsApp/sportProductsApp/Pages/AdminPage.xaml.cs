@@ -34,12 +34,12 @@ namespace sportProductsApp.Pages
 
         private void AddBT_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new Pages.AddEditPage(null));
         }
 
         private void BackBT_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new Pages.LoginPage());
         }
     }
 }

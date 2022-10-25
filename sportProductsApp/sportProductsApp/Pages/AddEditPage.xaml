@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       Title="AddEditPage">
 
-    <Grid Height="300" Background="#FF76E383">
+    <Grid Height="300" Background="#FF76E383" VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="150"/>
@@ -30,21 +30,33 @@
         <Label Style="{StaticResource Label}" Content="Кол-во на складе" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Style="{StaticResource Label}" Content="Единица измерения" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <TextBox Style="{StaticResource TextBox}" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding Id}"/>
+        <TextBox Style="{StaticResource TextBox}" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding Id}" Name="IDTB" IsEnabled="False"/>
         <TextBox Style="{StaticResource TextBox}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding ProductName}"/>
-        <ComboBox Style="{StaticResource ComboBox}"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" ItemsSource="{Binding Categories.Name}"/>
+        <ComboBox Style="{StaticResource ComboBox}"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" SelectedItem="{Binding Categories}" DisplayMemberPath="Name" Name="CategoryCB"/>
         <TextBox Style="{StaticResource TextBox}"  Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding ProductQuantityInStock}"/>
-        <ComboBox Style="{StaticResource ComboBox}" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" ItemsSource="{Binding Units.Unit}"/>
+        <ComboBox Style="{StaticResource ComboBox}" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" SelectedItem="{Binding Units}" DisplayMemberPath="Unit" Name="UnitCB"/>
 
         <Label Style="{StaticResource Label}" Content="Изображение" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Style="{StaticResource Label}" Content="Поставщик" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Style="{StaticResource Label}" Content="Стоимость" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Style="{StaticResource Label}" Content="Описание" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Описание" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Style="{StaticResource Label}" Content="Производитель" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <Image Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Source="{Binding ProductPhoto}"/>
-        <TextBox Style="{StaticResource TextBox}"  Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding Suppliers.Name}"/>
+        <Image Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Name="ProductPhotoIMG">
+            <Image.Source>
+                <Binding Path="ProductPhoto">
+                    <Binding.TargetNullValue>
+                        <BitmapImage UriSource="/Resources/picture.png"/>
+                    </Binding.TargetNullValue>
+                </Binding>
+            </Image.Source>
+        </Image>
+        
+        <ComboBox Style="{StaticResource ComboBox}"  Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" SelectedItem="{Binding Suppliers}" DisplayMemberPath="Name" Name="SuppliersCB"/>
+        <ComboBox Style="{StaticResource ComboBox}" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" SelectedItem="{Binding Manufacturers}" DisplayMemberPath="Name" Name="ManufacturerCB"/>
+
         <TextBox Style="{StaticResource TextBox}"  Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Text="{Binding ProductCost}"/>
-        <TextBox Style="{StaticResource TextBox}"  Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="90" Text="{Binding ProductDescription}"/>
+        <TextBox TextWrapping="Wrap" Style="{StaticResource TextBox}"  Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="90" Text="{Binding ProductDescription}"/>
 
         <Button Style="{StaticResource Button}" Content="Назад" Name="BackBT" Click="BackBT_Click" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Style="{StaticResource Button}" Content="Сохранить" Name="SaveBT" Click="SaveBT_Click" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
