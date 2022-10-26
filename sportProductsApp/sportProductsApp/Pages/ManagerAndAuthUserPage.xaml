@@ -49,6 +49,15 @@
             <ListView x:Name="ListView" Margin="10" 
                       HorizontalContentAlignment="Center"
                       VerticalContentAlignment="Center">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ProductQuantityInStock}" Value="0">
+                                <Setter Property="Background" Value="Gray"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
