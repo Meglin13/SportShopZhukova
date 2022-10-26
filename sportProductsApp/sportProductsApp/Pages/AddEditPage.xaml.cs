@@ -46,26 +46,25 @@ namespace sportProductsApp.Pages
         {
             try
             {
-                _currentproduct.ProductArticleNumber = 0.ToString();
-                _currentproduct.ProductMaxDiscountAmount = 0;
-                _currentproduct.ProductDiscountAmount = 0;
-
-                int id = Int32.Parse(IDTB.Text);
-
-                if (_currentproduct.Id == 0)
+                if (IsProductValid(_currentproduct))
                 {
-                    Data.sportShopZhukovaEntities.GetContext().Product.Add(_currentproduct);
+                    _currentproduct.ProductArticleNumber = 0.ToString();
+                    _currentproduct.ProductMaxDiscountAmount = 0;
+                    _currentproduct.ProductDiscountAmount = 0;
+
+                    int id = Int32.Parse(IDTB.Text);
+
+                    if (_currentproduct.Id == 0)
+                    {
+                        Data.sportShopZhukovaEntities.GetContext().Product.Add(_currentproduct);
+                    }
+
+                    Data.sportShopZhukovaEntities.GetContext().SaveChanges();
+
+                    MessageBox.Show("Сохранено!\n");
+                    Manager.MainFrame.Navigate(new Pages.AdminPage());
                 }
-
-                Data.sportShopZhukovaEntities.GetContext().SaveChanges();
-
-                MessageBox.Show("Сохранено!\n");
-                Manager.MainFrame.Navigate(new Pages.AdminPage());
             }
-            //catch (System.Data.Entity.Infrastructure.DbUpdateException)
-            //{
-            //    MessageBox.Show("Товар с таким же артикулом уже существует");
-            //}
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -78,13 +77,20 @@ namespace sportProductsApp.Pages
 
             StringBuilder errors = new StringBuilder();
 
-            //TODO: Проверка значений
-
             if (string.IsNullOrWhiteSpace(_currentproduct.ProductName))
-                errors.AppendLine("Укажите имя продукта");
+                errors.AppendLine("Укажите наименование продукта");
 
-            if (_currentproduct.Manufacturers == null)
+            if (_currentproduct.Categories.Id == 0)
+                errors.AppendLine("Выберите категорию");
+
+            if (_currentproduct.Manufacturers.Id == 0)
                 errors.AppendLine("Выберите производителя");
+
+            if (_currentproduct.Units.Id == 0)
+                errors.AppendLine("Выберите единицу измерения");
+
+            if (_currentproduct.Suppliers.Id == 0)
+                errors.AppendLine("Выберите поставщика");
 
             if (string.IsNullOrWhiteSpace(_currentproduct.ProductDescription))
                 errors.AppendLine("Укажите описание");
@@ -92,21 +98,32 @@ namespace sportProductsApp.Pages
             if (_currentproduct.ProductQuantityInStock < 0)
                 errors.AppendLine("Отрицательное значение товара в наличии");
 
-            if (_currentproduct.Id_unit == 0)
-                errors.AppendLine("Выберите единицу измерения");
+            if (_currentproduct.ProductPhoto == null)
+                errors.AppendLine("Выберите изображение");
 
-            if (_currentproduct.Id_supplier == 0)
-                errors.AppendLine("Выберите поставщика");
+            try
+            {
+                Int32.Parse(ProductCostTB.Text);
+            }
+            catch (Exception)
+            {
+                errors.AppendLine("Неверная стоимость");
+            }
 
-
+            try
+            {
+                Int32.Parse(ProductQuantityInStockTB.Text);
+            }
+            catch (Exception)
+            {
+                errors.AppendLine("Неверное кол-во в наличии");
+            }
 
             if (errors.Length > 0)
             {
                 MessageBox.Show(errors.ToString());
                 return false;
             }
-
-
 
             return IsValid;
         }
@@ -132,12 +149,11 @@ namespace sportProductsApp.Pages
                         Uri imageUri = new Uri(filePath, UriKind.Absolute);
                         BitmapImage imageBitmap = new BitmapImage(imageUri);
 
-                        //if (
-                        //    file.Length <= 2097152
-                        //    //imageBitmap.Width % 3 == 0 & imageBitmap.Height % 4 == 0
-                        //    )
-                        //{
-                        ProductPhotoIMG.Source = imageBitmap;
+                        var dsf = Math.Round(imageBitmap.Width);
+
+                        if (Math.Round(imageBitmap.Width) <= 300 & Math.Round(imageBitmap.Height) <= 200)
+                        {
+                            ProductPhotoIMG.Source = imageBitmap;
 
                         ImageConverter converter = new ImageConverter();
 
@@ -149,10 +165,10 @@ namespace sportProductsApp.Pages
                             byte[] img = ms.ToArray();
                             _currentproduct.ProductPhoto = img;
                         }
-                        //}
-                        //else
-                        //    MessageBox.Show("Неправильное соотношение сторон или слишком большой размер!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
+                    else
+                        MessageBox.Show("Неправильное соотношение сторон! Необходимо: 300x200", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
                 }
             }
             catch (Exception ex)

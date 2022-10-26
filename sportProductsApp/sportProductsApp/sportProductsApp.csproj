@@ -294,10 +294,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\test.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Manager.cs" />
@@ -312,9 +308,6 @@
     </Compile>
     <Compile Include="Pages\ManagerAndAuthUserPage.xaml.cs">
       <DependentUpon>ManagerAndAuthUserPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\test.xaml.cs">
-      <DependentUpon>test.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

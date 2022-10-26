@@ -26,7 +26,6 @@ namespace sportProductsApp
 
             Manager.MainFrame = MainFrame;
             Manager.MainFrame.Navigate(new Pages.LoginPage());
-            //Manager.MainFrame.Navigate(new Pages.AdminPage());
         }
     }
 }

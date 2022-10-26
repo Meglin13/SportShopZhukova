@@ -21,7 +21,6 @@ namespace sportProductsApp.Pages
     /// </summary>
     public partial class AdminPage : Page
     {
-        //TODO: Растянуть форму
         public AdminPage()
         {
             InitializeComponent();
