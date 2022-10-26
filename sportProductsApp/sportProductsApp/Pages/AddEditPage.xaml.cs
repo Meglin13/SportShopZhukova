@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,7 +44,41 @@ namespace sportProductsApp.Pages
 
         private void SaveBT_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                _currentproduct.ProductArticleNumber = 0.ToString();
+                _currentproduct.ProductMaxDiscountAmount = 0;
+                _currentproduct.ProductDiscountAmount = 0;
+
+                int id = Int32.Parse(IDTB.Text);
+
+                if (_currentproduct.Id == 0)
+                {
+                    Data.sportShopZhukovaEntities.GetContext().Product.Add(_currentproduct);
+                }
+
+                Data.sportShopZhukovaEntities.GetContext().SaveChanges();
+
+                MessageBox.Show("Сохранено!\n");
+                Manager.MainFrame.Navigate(new Pages.AdminPage());
+            }
+            //catch (System.Data.Entity.Infrastructure.DbUpdateException)
+            //{
+            //    MessageBox.Show("Товар с таким же артикулом уже существует");
+            //}
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public bool IsProductValid(Data.Product product)
+        {
+            bool IsValid = false;
+
             StringBuilder errors = new StringBuilder();
+
+            //TODO: Проверка значений
 
             if (string.IsNullOrWhiteSpace(_currentproduct.ProductName))
                 errors.AppendLine("Укажите имя продукта");
@@ -56,37 +92,72 @@ namespace sportProductsApp.Pages
             if (_currentproduct.ProductQuantityInStock < 0)
                 errors.AppendLine("Отрицательное значение товара в наличии");
 
+            if (_currentproduct.Id_unit == 0)
+                errors.AppendLine("Выберите единицу измерения");
+
+            if (_currentproduct.Id_supplier == 0)
+                errors.AppendLine("Выберите поставщика");
+
+
+
             if (errors.Length > 0)
             {
                 MessageBox.Show(errors.ToString());
-                return;
+                return false;
             }
 
+
+
+            return IsValid;
+        }
+
+        private void PhotoLoadBT_Click(object sender, RoutedEventArgs e)
+        {
             try
             {
-                _currentproduct.ProductArticleNumber = 0.ToString();
-                _currentproduct.ProductMaxDiscountAmount = 0;
-                _currentproduct.ProductDiscountAmount = 0;
+                string filePath;
 
-                int id = Int32.Parse(IDTB.Text);
-
-                if (Data.sportShopZhukovaEntities.GetContext().Product.Where(b => b.Id == id).FirstOrDefault() != null)
+                using (System.Windows.Forms.OpenFileDialog openFileDialog = new System.Windows.Forms.OpenFileDialog())
                 {
-                    Data.sportShopZhukovaEntities.GetContext().Product.Add(_currentproduct);
+                    openFileDialog.InitialDirectory = "c:\\";
+                    openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;...";
+                    openFileDialog.FilterIndex = 2;
+                    openFileDialog.RestoreDirectory = true;
+
+                    if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    {
+                        filePath = openFileDialog.FileName;
+                        FileInfo file = new FileInfo(filePath);
+
+                        Uri imageUri = new Uri(filePath, UriKind.Absolute);
+                        BitmapImage imageBitmap = new BitmapImage(imageUri);
+
+                        //if (
+                        //    file.Length <= 2097152
+                        //    //imageBitmap.Width % 3 == 0 & imageBitmap.Height % 4 == 0
+                        //    )
+                        //{
+                        ProductPhotoIMG.Source = imageBitmap;
+
+                        ImageConverter converter = new ImageConverter();
+
+                        JpegBitmapEncoder encoder = new JpegBitmapEncoder();
+                        encoder.Frames.Add(BitmapFrame.Create(imageBitmap));
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            encoder.Save(ms);
+                            byte[] img = ms.ToArray();
+                            _currentproduct.ProductPhoto = img;
+                        }
+                        //}
+                        //else
+                        //    MessageBox.Show("Неправильное соотношение сторон или слишком большой размер!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
-
-                Data.sportShopZhukovaEntities.GetContext().SaveChanges();
-
-                MessageBox.Show("Сохранено!\n");
-                Manager.MainFrame.GoBack();
             }
-            //catch (System.Data.Entity.Infrastructure.DbUpdateException)
-            //{
-            //    MessageBox.Show("Товар с таким же артикулом уже существует");
-            //}
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Плохое изображение!!!!!!!!!" + ex.Message);
             }
         }
     }

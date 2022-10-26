@@ -26,13 +26,14 @@
             <PasswordBox x:Name="PasswordBox" Style="{StaticResource PasswordBox}"
                      Margin="0,0,0,0"></PasswordBox>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Label Content="CAPTCHA" Name="CAPTCHALabel" Style="{StaticResource Label}" HorizontalAlignment="Center"/>
-                <Button Style="{StaticResource Button}" Content="↺" Width="40" Name="NewCAPTCHAButton" Click="NewCAPTCHAButton_Click"/>
+            <StackPanel Name="CAPTCHASP">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Label Content="CAPTCHA" Name="CAPTCHALabel" Style="{StaticResource Label}" HorizontalAlignment="Center"/>
+                    <Button Style="{StaticResource Button}" Content="↺" Width="40" Name="NewCAPTCHAButton" Click="NewCAPTCHAButton_Click"/>
+                </StackPanel>
+                <TextBox Style="{StaticResource TextBox}" Name="CAPTCHACheckTextBox"/>
             </StackPanel>
-
-            <TextBox Style="{StaticResource TextBox}" Name="CAPTCHACheckTextBox"/>
-
+            
             <Separator Height="10" Opacity="0"></Separator>
             <Button x:Name="EnterButton" Content="Вход" Style="{StaticResource Button}"
                 Click="EnterButton_Click" Width="300"></Button>

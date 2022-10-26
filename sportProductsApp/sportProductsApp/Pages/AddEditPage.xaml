@@ -16,7 +16,7 @@
             <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="auto"/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -42,16 +42,11 @@
         <Label Style="{StaticResource Label}" Content="Описание" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Style="{StaticResource Label}" Content="Производитель" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <Image Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Name="ProductPhotoIMG">
-            <Image.Source>
-                <Binding Path="ProductPhoto">
-                    <Binding.TargetNullValue>
-                        <BitmapImage UriSource="/Resources/picture.png"/>
-                    </Binding.TargetNullValue>
-                </Binding>
-            </Image.Source>
-        </Image>
-        
+        <StackPanel  Grid.Row="0" Grid.Column="3">
+            <Image HorizontalAlignment="Center" VerticalAlignment="Top" Height="100" Name="ProductPhotoIMG" Source="{Binding ProductPhoto}"/>
+            <Button Style="{StaticResource Button}" Content="Выбрать изображение" Width="auto" Name="PhotoLoadBT" Click="PhotoLoadBT_Click"/>
+        </StackPanel>
+
         <ComboBox Style="{StaticResource ComboBox}"  Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" SelectedItem="{Binding Suppliers}" DisplayMemberPath="Name" Name="SuppliersCB"/>
         <ComboBox Style="{StaticResource ComboBox}" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" SelectedItem="{Binding Manufacturers}" DisplayMemberPath="Name" Name="ManufacturerCB"/>
 

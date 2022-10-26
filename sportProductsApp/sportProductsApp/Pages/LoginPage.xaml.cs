@@ -26,6 +26,8 @@ namespace sportProductsApp.Pages
         {
             InitializeComponent();
 
+            CAPTCHASP.Visibility = Visibility.Collapsed;
+
             cap = MakeCAPTCHA();
 
             CAPTCHALabel.Content = "CAPTCHA: " + cap;
@@ -38,30 +40,39 @@ namespace sportProductsApp.Pages
             {
                 if (Data.sportShopZhukovaEntities.GetContext().User
                     .Any(user => user.UserLogin == LoginTextBox.Text
-                    && user.UserPassword == PasswordBox.Password) & CAPTCHACheckTextBox.Text == cap)
+                    && user.UserPassword == PasswordBox.Password))
                 {
-                    Manager.currentUser = Data.sportShopZhukovaEntities.GetContext().User
-                        .Where(user => user.UserLogin == LoginTextBox.Text 
+                    if ((CAPTCHACheckTextBox.Text == cap & CAPTCHASP.Visibility == Visibility.Visible) || CAPTCHASP.Visibility == Visibility.Collapsed)
+                    {
+                        Manager.currentUser = Data.sportShopZhukovaEntities.GetContext().User
+                        .Where(user => user.UserLogin == LoginTextBox.Text
                         && user.UserPassword == PasswordBox.Password).FirstOrDefault();
 
-                    MessageBox.Show("Успешный вход!", "Инфо", MessageBoxButton.OK, MessageBoxImage.Information);
+                        MessageBox.Show("Успешный вход!", "Инфо", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                    if (Manager.currentUser.Role.RoleName == "Менеджер" ||
+                        if (Manager.currentUser.Role.RoleName == "Менеджер" ||
                         Manager.currentUser.Role.RoleName == "Клиент")
-                    {
-                        Manager.MainFrame.Navigate(new Pages.ManagerAndAuthUserPage());
+                        {
+                            Manager.MainFrame.Navigate(new Pages.ManagerAndAuthUserPage());
+                        }
+                        else if (Manager.currentUser.Role.RoleName == "Администратор")
+                        {
+                            Manager.MainFrame.Navigate(new Pages.AdminPage());
+                        }
                     }
-                    else if (Manager.currentUser.Role.RoleName == "Администратор")
+                    else
                     {
-                        Manager.MainFrame.Navigate(new Pages.AdminPage());
+                        MessageBox.Show("Введите капчу!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                 } else
                 {
                     MessageBox.Show("Пользователей с такими данными не существует!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    CAPTCHASP.Visibility = Visibility.Visible;
                 }
             } else
             {
                 MessageBox.Show("Поле логин/пароль/капча пустое!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                CAPTCHASP.Visibility = Visibility.Visible;
             }
         }
 
@@ -88,7 +99,8 @@ namespace sportProductsApp.Pages
 
         private void NewCAPTCHAButton_Click(object sender, RoutedEventArgs e)
         {
-            CAPTCHALabel.Content = "CAPTCHA: " + MakeCAPTCHA();
+            cap = MakeCAPTCHA();
+            CAPTCHALabel.Content = "CAPTCHA: " + cap;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sportProductsApp.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace sportProductsApp.Pages
     /// </summary>
     public partial class AdminPage : Page
     {
+        //TODO: Растянуть форму
         public AdminPage()
         {
             InitializeComponent();
@@ -40,6 +42,26 @@ namespace sportProductsApp.Pages
         private void BackBT_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new Pages.LoginPage());
+        }
+
+        private void DeleteBT_Click(object sender, RoutedEventArgs e)
+        {
+            var ProductForDelete = ProductDG.SelectedItems.Cast<Product>().ToList();
+
+            if (MessageBox.Show($"Вы точно хотите удалить {ProductForDelete.Count()} элемент(ов)?", "Уведомление", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    sportShopZhukovaEntities.GetContext().Product.RemoveRange(ProductForDelete);
+                    sportShopZhukovaEntities.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены");
+                    ProductDG.ItemsSource = sportShopZhukovaEntities.GetContext().Product.ToList();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
         }
     }
 }

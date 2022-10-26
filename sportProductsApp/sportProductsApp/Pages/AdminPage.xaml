@@ -52,6 +52,7 @@
 
         <Grid Grid.Row="1">
             <Button Content="Добавить товар" Style="{StaticResource Button}" Name="AddBT" Click="AddBT_Click" HorizontalAlignment="Left"/>
+            <Button Content="Удалить товар" Style="{StaticResource Button}" Name="DeleteBT" Click="DeleteBT_Click" HorizontalAlignment="Center"/>
             <Button Content="Назад" Style="{StaticResource Button}" Name="BackBT" Click="BackBT_Click" HorizontalAlignment="Right"/>
         </Grid>
 
