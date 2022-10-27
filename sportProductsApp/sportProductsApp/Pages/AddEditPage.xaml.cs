@@ -80,16 +80,16 @@ namespace sportProductsApp.Pages
             if (string.IsNullOrWhiteSpace(_currentproduct.ProductName))
                 errors.AppendLine("Укажите наименование продукта");
 
-            if (_currentproduct.Categories.Id == 0)
+            if (_currentproduct.Categories == null)
                 errors.AppendLine("Выберите категорию");
 
-            if (_currentproduct.Manufacturers.Id == 0)
+            if (_currentproduct.Manufacturers == null)
                 errors.AppendLine("Выберите производителя");
 
-            if (_currentproduct.Units.Id == 0)
+            if (_currentproduct.Units == null)
                 errors.AppendLine("Выберите единицу измерения");
 
-            if (_currentproduct.Suppliers.Id == 0)
+            if (_currentproduct.Suppliers == null)
                 errors.AppendLine("Выберите поставщика");
 
             if (string.IsNullOrWhiteSpace(_currentproduct.ProductDescription))
