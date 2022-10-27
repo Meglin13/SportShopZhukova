@@ -98,6 +98,9 @@ namespace sportProductsApp.Pages
             if (_currentproduct.ProductQuantityInStock < 0)
                 errors.AppendLine("Отрицательное значение товара в наличии");
 
+            if (_currentproduct.ProductCost < 0)
+                errors.AppendLine("Отрицательное значение стоимости товара");
+
             if (_currentproduct.ProductPhoto == null)
                 errors.AppendLine("Выберите изображение");
 
