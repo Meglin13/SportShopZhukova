@@ -181,7 +181,6 @@ C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\s
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\Pages\AdminPage.g.cs
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\Pages\LoginPage.g.cs
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuthUserPage.g.cs
-C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\Pages\test.g.cs
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\App.g.cs
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_Content.g.cs
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_MarkupCompile.cache
@@ -192,7 +191,6 @@ C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\s
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\Pages\AdminPage.baml
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\Pages\LoginPage.baml
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuthUserPage.baml
-C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\Pages\test.baml
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.g.resources
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.Properties.Resources.resources
 C:\Users\zhuma\Desktop\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.GenerateResource.cache
