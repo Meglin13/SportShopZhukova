@@ -20,7 +20,7 @@
                   CanUserReorderColumns="False" 
                   CanUserResizeRows="False" 
                   CanUserSortColumns="False"
-                  ColumnWidth="auto" IsReadOnly="True">
+                  ColumnWidth="auto" IsReadOnly="True" FontFamily="Comic Sans MS">
             <DataGrid.Columns>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>

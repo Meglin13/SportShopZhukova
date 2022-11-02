@@ -300,3 +300,203 @@ C:\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\
 C:\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.CopyComplete
 C:\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.exe
 C:\Новая папка\SportShopZhukova\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.pdb
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\sportProductsApp.exe.config
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\sportProductsApp.exe
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\sportProductsApp.pdb
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Azure.Core.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Azure.Identity.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\EntityFramework.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Identity.Client.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Buffers.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Data.SqlClient.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Memory.Data.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Memory.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.AccessControl.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Permissions.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Text.Json.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.ValueTuple.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Azure.Core.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Azure.Identity.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\EntityFramework.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Data.SqlClient.pdb
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Data.SqlClient.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Identity.Client.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Buffers.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Data.SqlClient.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Memory.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Memory.Data.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.AccessControl.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Permissions.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Text.Json.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.ValueTuple.xml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.AssemblyReference.cache
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\MainWindow.g.cs
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\AddEditPage.g.cs
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\AdminPage.g.cs
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\LoginPage.g.cs
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuthUserPage.g.cs
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\App.g.cs
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_Content.g.cs
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_MarkupCompile.cache
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_MarkupCompile.lref
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\App.baml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\MainWindow.baml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\AddEditPage.baml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\AdminPage.baml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\LoginPage.baml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuthUserPage.baml
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.g.resources
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.Properties.Resources.resources
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.GenerateResource.cache
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.CoreCompileInputs.cache
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.CopyComplete
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.exe
+C:\Users\kuzob\Desktop\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.pdb
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\sportProductsApp.exe.config
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\sportProductsApp.exe
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\sportProductsApp.pdb
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Azure.Core.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Azure.Identity.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\EntityFramework.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\EntityFramework.SqlServer.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Data.SqlClient.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Identity.Client.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Logging.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Buffers.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Data.SqlClient.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Memory.Data.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Memory.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Numerics.Vectors.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.AccessControl.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Permissions.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Principal.Windows.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Text.Encodings.Web.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Text.Json.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.ValueTuple.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Azure.Core.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Azure.Identity.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\EntityFramework.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\EntityFramework.SqlServer.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Data.SqlClient.pdb
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Data.SqlClient.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Identity.Client.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Logging.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Buffers.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Configuration.ConfigurationManager.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Data.SqlClient.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Memory.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Memory.Data.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Numerics.Vectors.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.AccessControl.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Permissions.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Security.Principal.Windows.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Text.Encodings.Web.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Text.Json.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\System.ValueTuple.xml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.AssemblyReference.cache
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.SuggestedBindingRedirects.cache
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\MainWindow.g.cs
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\AddEditPage.g.cs
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\AdminPage.g.cs
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\LoginPage.g.cs
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuthUserPage.g.cs
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\App.g.cs
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_Content.g.cs
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_MarkupCompile.cache
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp_MarkupCompile.lref
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\App.baml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\MainWindow.baml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\AddEditPage.baml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\AdminPage.baml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\LoginPage.baml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\Pages\ManagerAndAuthUserPage.baml
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.g.resources
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.Properties.Resources.resources
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.GenerateResource.cache
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.CoreCompileInputs.cache
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.csproj.CopyComplete
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.exe
+E:\!!!!!!!!!!!! ДОДЕЛАТЬ И ЗАПУШИТЬ!!!!!!!!!!!!!!\SportShopZhukova-master\sportProductsApp\sportProductsApp\obj\Debug\sportProductsApp.pdb

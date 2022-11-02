@@ -309,6 +309,7 @@
     <Compile Include="Pages\ManagerAndAuthUserPage.xaml.cs">
       <DependentUpon>ManagerAndAuthUserPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProductUtilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

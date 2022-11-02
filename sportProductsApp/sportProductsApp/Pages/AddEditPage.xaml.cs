@@ -31,6 +31,9 @@ namespace sportProductsApp.Pages
 
             DataContext = _currentproduct;
 
+            if (_currentproduct.Id == 0)
+                IDTB.Visibility = Visibility.Hidden;
+
             CategoryCB.ItemsSource = Data.sportShopZhukovaEntities.GetContext().Categories.ToList();
             SuppliersCB.ItemsSource = Data.sportShopZhukovaEntities.GetContext().Suppliers.ToList();
             UnitCB.ItemsSource = Data.sportShopZhukovaEntities.GetContext().Units.ToList();
@@ -46,7 +49,9 @@ namespace sportProductsApp.Pages
         {
             try
             {
-                if (IsProductValid(_currentproduct))
+                ProductUtilities productUtilities = new ProductUtilities();
+
+                if (productUtilities.IsProductValid(_currentproduct))
                 {
                     _currentproduct.ProductArticleNumber = 0.ToString();
                     _currentproduct.ProductMaxDiscountAmount = 0;
@@ -69,66 +74,6 @@ namespace sportProductsApp.Pages
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        public bool IsProductValid(Data.Product product)
-        {
-            bool IsValid = false;
-
-            StringBuilder errors = new StringBuilder();
-
-            if (string.IsNullOrWhiteSpace(_currentproduct.ProductName))
-                errors.AppendLine("Укажите наименование продукта");
-
-            if (_currentproduct.Categories == null)
-                errors.AppendLine("Выберите категорию");
-
-            if (_currentproduct.Manufacturers == null)
-                errors.AppendLine("Выберите производителя");
-
-            if (_currentproduct.Units == null)
-                errors.AppendLine("Выберите единицу измерения");
-
-            if (_currentproduct.Suppliers == null)
-                errors.AppendLine("Выберите поставщика");
-
-            if (string.IsNullOrWhiteSpace(_currentproduct.ProductDescription))
-                errors.AppendLine("Укажите описание");
-
-            if (_currentproduct.ProductQuantityInStock < 0)
-                errors.AppendLine("Отрицательное значение товара в наличии");
-
-            if (_currentproduct.ProductCost < 0)
-                errors.AppendLine("Отрицательное значение стоимости товара");
-
-            if (_currentproduct.ProductPhoto == null)
-                errors.AppendLine("Выберите изображение");
-
-            try
-            {
-                Int32.Parse(ProductCostTB.Text);
-            }
-            catch (Exception)
-            {
-                errors.AppendLine("Неверная стоимость");
-            }
-
-            try
-            {
-                Int32.Parse(ProductQuantityInStockTB.Text);
-            }
-            catch (Exception)
-            {
-                errors.AppendLine("Неверное кол-во в наличии");
-            }
-
-            if (errors.Length > 0)
-            {
-                MessageBox.Show(errors.ToString());
-                return false;
-            }
-
-            return IsValid;
         }
 
         private void PhotoLoadBT_Click(object sender, RoutedEventArgs e)
@@ -178,6 +123,47 @@ namespace sportProductsApp.Pages
             {
                 MessageBox.Show("Плохое изображение!!!!!!!!!" + ex.Message);
             }
+        }
+
+        private void ProductQuantityInStockTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string ClearText = "";
+
+            foreach (var c in ProductQuantityInStockTB.Text)
+            {
+                if (char.IsDigit(c))
+                {
+                    ClearText += c;
+                }
+            }
+
+            ProductQuantityInStockTB.Text = ClearText;
+            ProductQuantityInStockTB.SelectionStart = ProductQuantityInStockTB.Text.Length;
+        }
+
+        private void ProductCostTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string ClearText = "";
+
+            string Text = ProductCostTB.Text;
+
+            foreach (var c in Text)
+            {
+                if (char.IsDigit(c))
+                {
+                    ClearText += c;
+                }
+                else if (c == '.')
+                {
+                    if (Text.Substring(Text.IndexOf(".") + 1).Length < 3 & !Text.Substring(Text.IndexOf(".") + 1).Contains('.'))
+                    {
+                        ClearText += c;
+                    }
+                }
+            }
+
+            ProductCostTB.Text = ClearText;
+            ProductCostTB.SelectionStart = ProductCostTB.Text.Length;
         }
     }
 }
